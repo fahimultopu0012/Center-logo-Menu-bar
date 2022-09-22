@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: none repeat scroll 0 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+/* normal menu area for center logo  start*/
+
+
+
+.inner-main-menu{
+    margin: 0 auto;
+    width: 1170px;
+}
+.inner-main-menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+    padding-top: 55px;
+}
+.inner-main-menu ul li{
+    float: none;
+    display: inline-block;
+}
+.inner-main-menu ul li:nth-child(1),.inner-main-menu ul li:nth-child(2),.inner-main-menu ul li:nth-child(3){
+    float: left;
+    
+}
+.inner-main-menu ul li a{
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    transition: 0.5s all ease-in-out;
+    color: #ffff;
+}
+.inner-main-menu ul li a:hover{
+    color: #9cc4ce;
+}
+
+
+#main-menu{
+    width: 100%;
+    position: relative;
+}
+.logo-area{
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    content: '';
+    margin-left: -100px;
+    text-align: center;
+}
+
+
+
+/* normal menu area for center logo  end*/
+
+
+/* drop down menu area for center logo  start*/
+.inner-main-menu ul li{
+    position: relative;
+}
+
+.inner-main-menu ul li ul{
+    position: absolute;
+    top: 40px;
+    left: -99999px;
+    width: 150px;
+    background: #262626;
+    padding: 0
+}
+
+.inner-main-menu ul li:hover ul{
+ 
+    left: 0px;
+  
+}
+
+.inner-main-menu ul li ul li{
+   float: left;
+   width: 100%;
+    text-align: left;
+}
+.inner-main-menu ul li ul li a{
+    color: #fff; 
+    text-transform: capitalize;
+    font-size: 15px;
+    transition: 0.5s all ease-in-out;
+ }
+ .inner-main-menu ul li ul li a:hover{
+    background: #ddd;
+    color: #262626;
+      
+ }
+/* This code for indicating which submenu we are */
+
+.inner-main-menu ul li:hover a{
+    color: #07b8f8;
+}
+
+.inner-main-menu ul li:hover ul li a{
+    color: #fff;
+}
+.inner-main-menu ul li ul li a:hover{
+    color: #262626;
+}
+.inner-main-menu ul li ul li:hover a{
+    background: #ddd;
+    color: #262626;
+}
+.inner-main-menu ul li ul li:hover ul li a{
+    background: #262626;
+    color: #fff;
+}
+.inner-main-menu ul li ul li ul li a:hover{
+    background: #ddd;
+    color: #262626;
+}
+ /* Here this code for sub menu 3 step level */
+
+ .inner-main-menu ul li ul li ul{
+    top: 0;
+    left: -999999px;
+      
+
+ }
+ .inner-main-menu ul li:hover ul li ul{
+    top: 0;
+    left: -999999px;
+      
+ }
+ .inner-main-menu ul li ul li:hover ul{
+    top: 0;
+    left: 150px;
+      
+ }
+/* drop down menu area for center logo  end*/
+
+
+/* mobile menu slick nav */
+.slicknav_menu {
+    
+    font-size: 16px;
+    padding: 5px;
+    position: fixed;
+    right: 0;
+    width: 40%;
+    background: rgba(0,0,0,0) none repeat scroll 0 0;
+    z-index: 9999;
+    display: none;
+}
+
+.slicknav_nav {
+    clear: both;
+    color: #fff;
+    margin: 0;
+    font-size: .875em;
+    background: #262626;
+}
+.slicknav_menu .slicknav_menutxt {
+    display: none;
+    line-height: 1.188em;
+    float: left;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0 1px 3px #000;
+}
+
+
+@media only screen and (min-width: 200px) and (max-width: 991px){
+    .slicknav_menu {
+    
+        display: block;
+    }
+    .inner-main-menu{
+        display: none;
+    }
+    .logo-area{
+        position: fixed;
+        left: 80px;
+        top: 20px;
+    }
+    .logo-area img{
+        width: 120px;
+        height: 80px;
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center logo menu bar design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="slicknav.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-menu" style="background: url('banner.jpg') no-repeat; background-position: center; background-size: cover; width: 100%; height: 100vh; ">
+        <div class="logo-area">
+            <a href=""><img src="logo.png" width="" alt="logo"></a>
+        </div>
+        <div class="inner-main-menu">
+            <ul id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a>
+                    <ul>
+                        <li><a href="#">wordprss</a></li>
+                        <li><a href="#">Javascript</a>
+                            
+
+                            <ul>
+                                <li><a href="#">Vanila js</a></li>
+                                <li><a href="#">Javascript</a></li>
+                                <li><a href="#">vue js</a></li>
+                                <li><a href="#">Ec6 js</a></li>
+                            </ul>
+
+
+                        </li>
+                        <li><a href="#">Node js</a></li>
+                        <li><a href="#">Bootsrap</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="jquery.min.js"></script>
+    <script src="jquery.slicknav.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+	        $('#menu').slicknav();
+        });
+    </script>
+</body>
+</html>
